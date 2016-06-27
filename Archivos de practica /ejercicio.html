@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	
+	<meta charset="utf-8">
+    <script type="text/javascript" src="angular.min.js"></script>
+    
+</head>
+
+<body>
+
+ <form>
+
+	<div>
+		 <div>
+			 <label>Nombre: 
+			 <input type="text" ng-model="nombre">
+			 </label>
+		</div> 
+
+		<div> 
+			<label>Apellido: 
+			<input type="text" ng-model="apellido">
+			</label>
+		</div>
+
+		 <div>
+			<label> {{ "Hola " + nombre  + " " + apellido }} </label>
+
+		</div>
+
+	</div>
+
+</form>
+	
+<br>
+
+<div>
+
+	 <div>
+		<label> Operando1:
+		<input type ="number" ng-model="numero1">
+		</label>
+	 </div>
+
+	 <div>
+	 	<label>Operando2: 
+	 	<input type ="number" ng-model="numero2">
+	 	</label>
+	 </div>
+
+	 <div>
+		 <button ng-click= "resultado=numero1+numero2"> + </button>
+		 <label>{{ resultado }}</label>
+	</div>
+
+</div>
+
+
+</body>
+</html>

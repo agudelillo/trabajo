@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+Contador Numérico
+
+<script src=angular.min.js ></script>
+<div ng-app>
+<button ng-click="count = count + 1"> Click Me!</button>
+
+
+<p> {{ count }}</p>
+
+</div> <script>
+function  myController($scope) {
+    $scope.count = 0;
+}
+</script>
+</body>
+</html>
